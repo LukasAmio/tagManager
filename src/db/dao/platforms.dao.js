@@ -3,7 +3,7 @@ const knex = require('./knex')
 
 const COLUMNS = {
     id: 'id', //auto increments
-    name: 'name', // nullable string
+    name: 'name', // not nullable string
     code: 'code', // not nullable string
   }
 
