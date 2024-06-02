@@ -80,7 +80,7 @@ class RulesDao extends Dao {
             level: dbRule[COLUMNS.level],
             createdAt: dbRule[COLUMNS.createdAt],
             deletedAt: dbRule[COLUMNS.deletedAt],
-            value: JSON.parse(dbRule[COLUMNS.value])
+            value: this._parseJson(dbRule[COLUMNS.value])
         }
         return rule
       }
